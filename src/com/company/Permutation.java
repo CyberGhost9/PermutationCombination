@@ -13,7 +13,7 @@ public class Permutation {
         for (int i=1;i<=n;i++){//n factorial
             num=num*i;
         }
-        int obj=n-r;/
+        int obj=n-r;
         int fact=1;
         for (int i=1;i<=obj;i++){//n-r factorial
             fact=fact*i;
