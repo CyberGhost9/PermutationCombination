@@ -10,19 +10,21 @@ public class Combination {
         System.out.print("Number of item selected from set: ");
         int r= scanner.nextInt();
         int num=1;
-        for (int i=1;i<=n;i++){
+        for (int i=1;i<=n;i++){//n factorial
             num=num*i;
         }
         int obj=n-r;
         int fact=1;
-        for (int i=1;i<=obj;i++){
+        for (int i=1;i<=obj;i++){//n-r factorial
             fact=fact*i;
         }
         int rfact=1;
-        for (int i=1;i<=r;i++){
+        for (int i=1;i<=r;i++){//r factorial
             rfact=rfact*i;
         }
-        int combination=num/(fact*rfact);
+        int combination=num/(fact*rfact);//Applying formula   n!
+                                         //C(n,r)       =  --------
+                                         //                (n-r)!r!
         System.out.println("C("+n+","+r+")="+combination);
     }
 }
